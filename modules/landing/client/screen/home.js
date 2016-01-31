@@ -1,6 +1,8 @@
 import {Component} from 'react';
 import ReactMixin from 'react-mixin';
 
+import HeadingArea from '../component/heading';
+
 @ReactMixin.decorate(ReactMeteorData)
 export default class Home extends Component {
 	state = {
@@ -13,8 +15,12 @@ export default class Home extends Component {
 	}
 
 	render() {
-		return <div id="home" className="container">
-			<h1>Hello world!</h1>
+		return <div id="home" className="contents">
+			<HeadingArea />
+
+			<div className="container">
+				<span>Hello world!</span>
+			</div>
 		</div>
 	}
 }
