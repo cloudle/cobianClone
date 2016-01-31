@@ -7,7 +7,7 @@ export default  class LandingSite extends Component {
 	};
 
 	componentWillMount() {
-		require('./styles/landing.import.css')
+		require('./styles/landing.styl')
 	}
 
 	render() {
