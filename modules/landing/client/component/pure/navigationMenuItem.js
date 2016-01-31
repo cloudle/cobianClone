@@ -1,7 +1,7 @@
 export default function({title, url, active}) {
 	var activeClass = active ? ' active' : '';
 
-	return <div class={'menu-item'+activeClass}>
+	return <div className={'menu-item'+activeClass}>
 		<div className="title">{title}</div>
 	</div>
 }
