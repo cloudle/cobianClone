@@ -5,12 +5,9 @@ import HeadingArea from '../component/heading';
 
 @ReactMixin.decorate(ReactMeteorData)
 export default class Home extends Component {
-	state = {
-
-	};
+	state = {};
 
 	getMeteorData() {
-
 		return {};
 	}
 

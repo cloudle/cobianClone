@@ -7,3 +7,14 @@ body
 
 .contents
   padding-top 70px
+
+.flex
+  box-sizing: border-box; display: flex
+  position: relative; flex-shrink: 0
+  align-items: stretch; align-content: flex-start
+  border: 0 solid black; margin: 0; padding: 0
+
+  &.horizontal
+    flex-direction: column
+  &.vertical
+    flex-direction: row

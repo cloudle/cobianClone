@@ -1,17 +1,47 @@
 .navigation
   position fixed; top 0
   width 100%; background-color white
-  border-bottom solid 3px #eeeeee
+  border-bottom solid 4px #eeeeee
 
-  .branding
-    float left; line-height 70px
+  .navigation-wrapper
+    .branding
+      float left; line-height 70px
 
-  .navigation-menu
-    float right
+    .navigation-menu
+      float right
 
-    .menu-item
-      display inline-block; cursor pointer
-      padding 24px 14px
+      .menu-item
+        display inline-block; cursor pointer
+        padding 0 16px; margin-bottom -4px
+        border-bottom solid 4px transparent
+        font-weight bold; text-transform uppercase
+        color #48494b; font-size 15px
+        line-height 70px
 
-      &:last-child { padding-right: 0 }
-      &.active { border-bottom: solid 2px orange }
+        &.active, &:hover
+          border-bottom solid 4px #B95454
+          color #c75b5b
+
+  .authentication-wrapper
+    background-color #3A4557; color white
+    height 50px; position relative
+
+    .ribbon
+      position absolute
+      width 50%; height 40px; bottom 0;
+      background-color white
+      background-image url('../images/nav-radius.png')
+      background-position top right
+      background-repeat no-repeat
+      background-size contain
+
+    .container
+      height 100%
+
+      .commands
+        float right; width 50%; height 100%
+
+        .auth-menu-item
+          float right; padding 0 12px
+          line-height 50px; font-size 14px
+          color #c3c7ce
