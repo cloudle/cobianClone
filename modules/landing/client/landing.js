@@ -1,4 +1,5 @@
 import {Component, PropTypes} from 'react';
+import ScrollTop from './component/scrollTop';
 import Navigation from './component/navigation';
 
 export default  class LandingSite extends Component {
@@ -12,6 +13,7 @@ export default  class LandingSite extends Component {
 
 	render() {
 		return <div>
+            <ScrollTop />
 			<Navigation />
 			{this.props.children}
 		</div>

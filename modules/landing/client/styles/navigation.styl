@@ -28,7 +28,7 @@
 
     .ribbon
       position absolute
-      width 50%; height 40px; bottom 0;
+      width 45%; height 40px; bottom 0;
       background-color white
       background-image url('../images/nav-radius.png')
       background-position top right
@@ -39,9 +39,29 @@
       height 100%
 
       .commands
-        float right; width 50%; height 100%
+        float right; height 100%
 
         .auth-menu-item
-          float right; padding 0 12px
+          position relative
+          float left; padding 0 12px
           line-height 50px; font-size 14px
           color #c3c7ce
+
+          span.fa
+            margin-right 5px
+
+          &:after
+            content "|"
+            position absolute
+            right 0px
+            top 0px
+          &:last-child:after
+            display none
+
+          a.btn
+            padding 5px 15px
+            color #fff
+            background-color #b95454
+            border-color #b14949 !important
+            font-size 13px
+            border-bottom solid 2px

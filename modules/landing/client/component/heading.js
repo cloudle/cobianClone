@@ -27,11 +27,12 @@ export default class HeadingArea extends Component {
 		var cloudPositionStyle = {backgroundPosition: `${this.state.cloudPosition}px 0px`};
 
 		return <div className="heading-area"
-		            style={cloudPositionStyle}>
-			<div className="heading-background"></div>
-			<div className="container">
+                    style={cloudPositionStyle}>
 
-			</div>
+			<div className="heading-background">
+
+            </div>
+
 			<div className="heading-road"></div>
 		</div>
 	}
